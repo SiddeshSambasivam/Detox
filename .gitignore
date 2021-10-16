@@ -274,6 +274,9 @@ cython_debug/
 Notebooks
 Checkpoints
 .vscode
+
+.token
+
 *.zip
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
