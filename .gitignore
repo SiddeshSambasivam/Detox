@@ -274,3 +274,10 @@ cython_debug/
 Notebooks
 Checkpoints
 .vscode
+*.zip
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+*.pem
