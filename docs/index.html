@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <title>Detox: Multilingual profanity filtering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" />
 </head>
 <body class="bg-white">    
-    <div class="container w-full max-w-7xl mx-auto">
-        <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-          <div class="flex flex-row items-center justify-between lg:justify-start">
-            <a href="#" class="text-2xl font-bold tracking-tighter text-purple-700 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> Detox </a>
-            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+    <div class="container w-full max-w-5xl mx-auto">
+        <div class="flex max-w-screen-xl p-5 mx-auto items-center justify-between flex-row px-6 lg:px-8">
+          <div class="flex flex-row items-center justify-between justify-start">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-purple-800 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> Detox </a>
+            <!-- <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
               <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
                 <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                 <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
               </svg>
-            </button>
+            </button> -->
           </div>
-          <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
-            <ul class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex">
+          <nav class="flex-row justify-end ">
+            <ul class="space-y-0 list-none lg:space-y-0 lg:items-center inline-flex">
               <li>
-                <a href="#" class="
+                <a href="#solution" class="
               px-2
               lg:px-6
               py-6
@@ -60,7 +63,7 @@
                 hover:font-bold">Docs</a>
             </li>
             <li class="px-2 lg:px-6 md:px-3">            
-                <a href="https://github.com/SiddeshSambasivam/Detox" class="text-gray-400 hover:text-gray-500 transition-colors duration-200">
+                <a href="https://github.com/SiddeshSambasivam/Detox" target="_blank" class="text-gray-400 hover:text-gray-500 transition-colors duration-200">
                     <span class="sr-only">Detox on GitHub</span>
                     <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
                         <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -74,21 +77,21 @@
 
 
       <section class="w-full bg-white">
-        <div class="relative items-center w-full px-5 mx-auto  md:px-12 lg:px-16 max-w-7xl lg:py-24">
+        <div class="relative items-center w-full px-5 mx-auto  pt-16 md:px-12 lg:px-16 max-w-7xl lg:pt-24 lg:pb-20">
           <div class="flex w-full mx-auto text-left">
             <div class="relative inline-flex items-center mx-auto align-middle">
               <div class="text-center">
-                <h1 data-animate="title" class="max-w-5xl text-5xl font-bold leading-none tracking-tighter text-black  lg:text-6xl lg:max-w-7xl">Multingual profanity filtering</h1>
-                <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-left text-gray-400  lg:text-center">
-                    Seamlessly integrate profanity filtering to all your platforms, community forums and channels.
+                <h1 data-animate="title" class="max-w-5xl text-5xl font-bold leading-none tracking-tighter text-black  lg:text-6xl lg:max-w-7xl">Maintain a  safe online community</h1>
+                <p class="max-w-xl mx-auto mt-7 text-md leading-relaxed text-left text-gray-600  lg:text-center">
+                  Easy to integrate web service to filter toxic speech in your community forums and channels.
                 </p>
-                <div class="mt-6 max-w-7xl sm:flex lg:justify-center">
-                    <button type="button" class="w-full sm:w-auto flex-none bg-gray-50 text-gray-400 hover:text-gray-900 font-mono leading-6 py-3 sm:px-6 border border-gray-200 rounded-xl flex items-center justify-center space-x-2 sm:space-x-4 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-300 focus:outline-none transition-colors duration-200"
+                <div class="mt-6 mb-10 flex lg:justify-center overflow-scroll md:overflow-auto">
+                    <button type="button" class="overflow-clip flex-none bg-gray-50 text-gray-400 hover:text-gray-900 font-mono leading-6 py-3 sm:px-6 border border-gray-200 rounded-xl flex items-center justify-center space-x-2 sm:space-x-4 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-300 duration-200 focus:outline-none transition-colors duration-200"
                     onclick="copyToClipboard()"
                     >
                         <span class="text-gray-900">
                             <span class="hidden sm:inline text-gray-500" aria-hidden="true">$ </span>
-                            <span type="text" id="API" value="https://127.0.0.1:5500/api">https://127.0.0.1:5500/api</span>
+                            <span type="text" id="API" value="http://ec2-13-212-167-131.ap-southeast-1.compute.amazonaws.com/api?sent=">http://ec2-13-212-167-131.ap-southeast-1.compute.amazonaws.com/api?sent=</span>
                             </span>
                             <span class="sr-only">(click to copy to clipboard)</span>
                         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -96,10 +99,192 @@
                         </svg>
                     </button>
               </div>
+              <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center  pb-10 md:pb-14">
+                <div>                
+                    <a href="#demo" class="font-medium inline-flex items-center justify-center border border-transparent 
+                    rounded-md leading-snug transition duration-150 ease-in-out shadow-2xl
+                    px-6 py-3 text-white bg-purple-700 hover:bg-purple-800 w-full mb-4 sm:w-auto sm:mb-0 hover:opacity-90 cursor-pointer">
+                      TRY IT NOW
+                    </a>
+                </div>
+                <div>              
+                  <a href="#problem" class="font-medium inline-flex items-center justify-center border border-transparent 
+                  rounded-md leading-snug transition duration-150 ease-in-out shadow-lg
+                  px-6 py-3 text-gray-700 bg-gray-100 hover:bg-gray-200 w-full sm:w-auto sm:ml-4 border-gray-200 cursor-pointer">
+                    LEARN MORE
+                  </a>
+                </div>
+            </div>    
             </div>
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="container px-5 pb-14 mx-auto lg:px-16">
+          <div class="flex flex-col w-full mb-2 text-center">
+            <span class="text-sm font-medium tracking-wide text-gray-500 uppercase"> Built to scale with your growing community. <a href="https://github.com/SiddeshSambasivam/Detox" class="font-semibold text-purple-700 lg:mb-0 hover:text-purple-800">Checkout our implementation »</a>
+            </span>
+          </div>
+          <div class="mx-auto">
+            <div class="grid grid-cols-2 mx-auto xl:grid-cols-4">
+              <div>
+                <img class="h-28 pt-10 mx-auto" src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" alt="Sketch ">
+              </div>
+              <div>
+                <img class="h-36 mx-auto" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/AWS-EC2.png" alt="Figma">
+              </div>
+              <div>
+                <img class="h-32 pt-6 mx-auto" src="https://camo.githubusercontent.com/aeb4f612bd9b40d81c62fcbebd6db44a5d4344b8b962be0138817e18c9c06963/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f686f72697a6f6e74616c2e706e67" alt="Framer">
+              </div>
+              <div>
+                <img class="h-24 pt-9 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png" alt="Sketch ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="pb-10" id="demo"></div>
+
+      <section class="w-full bg-white">
+        <div class="relative items-center w-full px-5 mx-auto  md:px-12 lg:px-16 max-w-7xl lg:pb-10">
+          <div class="flex w-full mx-auto text-left">
+            <div class="relative inline-flex items-center mx-auto align-middle">
+              <div class="pb-12 text-center">
+                <h1 id="demo-title" data-animate="title" class="max-w-5xl text-5xl font-bold leading-none tracking-tighter text-black  lg:text-6xl lg:max-w-7xl">
+                  Try live demo of Detox
+                </h1>
+                <form onsubmit="callAPI()" method="post" id="revue-form" name="revue-form" target="_blank" class="p-2 mt-8 transition duration-500 ease-in-out transform  border2 bg-gray-50 md:mx-auto rounded-xl sm:max-w-lg sm:flex">
+                  <div class="flex-1 min-w-0 revue-form-group">
+                    <input id="demo-text" type="text" class="block w-full px-5 py-3 text-base text-black placeholder-gray-400 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md  focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300" placeholder="He is such a loser! ">
+                  </div>
+                  <div class="mt-4 sm:mt-0 sm:ml-3 revue-form-actions">
+                    <button type="submit" id="member_submit" class="block w-full px-5 py-3 text-base font-medium text-white bg-purple-700 border border-transparent rounded-lg shadow  hover:bg-purple-800 sm:px-10 duration-200">Check toxicity</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>          
+      
+      <section class="mx-auto">
+        <div class="bg-white mx-auto dark:bg-gray-800 px-5 md:px-12 lg:px-16 max-w-7xl">
+          <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+              <h2 class="text-2xl font-extrabold text-black dark:text-white sm:text-3xl">
+                  <span class="block">
+                      Integrate detox with your discord server
+                  </span>
+                  <span class="block text-purple-700">
+                      With just one-click!
+                  </span>
+              </h2>
+              <div class="lg:mt-0 lg:flex-shrink-0">
+                  <div class=" inline-flex rounded-md shadow">
+                      <a href="https://discord.com/api/oauth2/authorize?client_id=812608483404939324&permissions=10240&scope=bot" target="_blank" class="py-3 px-6  bg-purple-700 hover:bg-purple-800 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md duration-200  rounded-lg shadow-xl">
+                          Add detox to discord server
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+
+        <section id="problem">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-10">
+            <div class="flex flex-wrap items-center mx-auto max-w-7xl" >
+              <div class="flex flex-col items-start mb-0 order-1 md:order-none text-left  lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0">
+                <span class="mb-8 text-sm font-bold tracking-widest text-purple-700 uppercase">problem statement </span>
+                <h1 class="mb-8 text-2xl font-bold leading-none tracking-tighter text-black  md:text-5xl"> 
+                  Growing toxicity in digital world
+                </h1>
+                <p class="mb-8 text-base leading-relaxed text-left text-gray-900"> 
+                  Toxic speech and hatred are tarnishing the value of online community spaces. Studies have shown that prolonged exposure to hateful content and messages affects your mental state.
+                </p>
+                <div class="flex flex-wrap w-full mt-2 -mx-4 text-left">
+                  <div class="w-1/4 p-4 mt-4 sm:w-1/4">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-5/6 lg:max-w-lg md:w-1/2 rounded-lg">
+                <div>
+                  <img class="object-cover object-center rounded-xl mb-10" alt="hero" src="https://www.internetmatters.org/wp-content/uploads/2019/11/OnlineHateTrolling-1200x630-600x315.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="solution">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-10">
+          <div class="flex flex-wrap items-center mx-auto max-w-7xl">
+            <div class="w-full lg:w-5/6 lg:max-w-lg md:w-1/2 rounded-xl">
+              <div>
+                <img class="h-full mb-10 object-cover object-center rounded-lg" alt="hero" src="https://blog.intercomassets.com/blog/wp-content/uploads/2019/11/hero-multilingual-support-trends-scaled.jpg.optimal.jpg">
+              </div>
+            </div>
+            <div class="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 md:mb-0">
+              <span class="mb-8 text-sm font-bold tracking-widest text-purple-700 uppercase">AI-based Solution</span>
+              <h1 class="mb-8 text-2xl font-bold leading-none tracking-tighter text-black  md:text-5xl">
+                Multilingual toxcity classification
+              </h1>
+              <p class="mb-8 text-base leading-relaxed text-left text-gray-900">
+                We trained a multilingual toxicity classification model to filter out toxic messages or conversations.<br/><br/>We built our product to scale so we trained and deployed the model in AWS with a load balancer to manage a high volume of traffic. 
+              </p>
+              <div class="flex flex-wrap w-full mt-2 -mx-4 text-left">
+                <div class="w-1/4 p-4 mt-4 sm:w-1/4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    
+      <section>
+        <div class="px-4 py-2 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-2">
+          <div class="mb-8 text-sm font-bold tracking-widest text-center text-purple-700 uppercase">
+            impact
+          </div>
+          <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+            <h1 class="
+          max-w-5xl
+          text-5xl
+          font-bold
+          leading-none
+          tracking-tighter
+          text-black
+          lg:text-6xl lg:max-w-7xl
+        ">Build a safe community</h1>
+            <p class=" max-w-xl mx-auto mt-8 text-base leading-relaxed text-left text-gray-900 lg:text-center"> 
+                Tackle cyber-bullying in online forums and channels
+            </p>
+            <p class=" max-w-xl mx-auto mt-1 text-base leading-relaxed text-left text-gray-900 lg:text-center"> 
+              Help moderators to maintain a safe community space to have conversations
+          </p>            
+          </div>
+        </div>
+      </section>
+
+
+      <footer class="bg-white " aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="px-4 py-8 mx-auto bg-gray-50 sm:px-6 lg:px-16">
+          <div class="flex flex-wrap items-baseline lg:justify-center">
+            <span class="mt-2 text-sm font-light text-gray-900"> 
+              Made by <a href="https://github.com/arumugamramaswamy" class="text-purple-700 font-medium">Arumugam</a>, <a href="https://github.com/nishkakhendry" class="text-purple-700 font-medium">Nishka</a>, <a href="https://github.com/SiddeshSambasivam" class="text-purple-700 font-medium">Siddesh</a> and <a href="https://github.com/swakv" class="text-purple-700 font-medium">Swathi</a>. Since 2021.
+          </div>
+        </div>
+      </footer>
+    
+    
+          
       <script>
           function copyToClipboard() {
             /* Get the text field */
@@ -108,7 +293,48 @@
 
             /* Copy the text inside the text field */
             navigator.clipboard.writeText(document.getElementById('API').innerHTML);
-        }
+          }
+
+          function insertAfter(referenceNode, newNode) {
+             referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+          }
+
+          function callAPI(){
+            event.preventDefault();
+            console.log('Logging: ', document.getElementById('demo-text').value)
+            const text = document.getElementById('demo-text').value
+            fetch('http://ec2-13-212-167-131.ap-southeast-1.compute.amazonaws.com/api?sent='+text, {
+              // mode: 'no-cors',
+              method: 'GET',
+              headers: {
+                Accept: 'application/json',
+              },
+            },
+            ).then(response => {
+              if (response.ok) {
+                response.json().then(json => {
+                    var toxicityVal = String((json['profanity']*100).toFixed(4));
+                    var elementExists = document.getElementById("api-response");
+                    if(elementExists){
+                      // Replace the innerHTML
+                      elementExists.innerHTML = toxicityVal+"%";
+                    }else{
+                      var el = document.createElement("div");
+                      el.classList.add('text-6xl');
+                      el.classList.add('text-purple-700');
+                      el.classList.add('font-black');
+                      el.classList.add('duration-700');
+                      el.classList.add('pt-8');
+                      el.setAttribute("id", "api-response");
+                      el.innerHTML = toxicityVal+"%";
+                      var div = document.getElementById("demo-title");
+                      insertAfter(div, el);
+                    }
+                });
+              }
+            });
+          }
       </script>
 </body>
 </html>
+
