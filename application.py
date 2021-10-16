@@ -4,8 +4,8 @@ from flask_cors import CORS
 
 from transformers import TFAutoModel, AutoTokenizer
 
-from model import build_model
-from tokenizer import dict_encode
+from src.model import build_model
+from src.tokenizer import dict_encode
 
 # FLASK Configs
 app = Flask(__name__)
