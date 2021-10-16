@@ -8,9 +8,9 @@ from src.model import build_model
 from src.tokenizer import dict_encode
 
 # FLASK Configs
-app = Flask(__name__)
-app.config["DEBUG"] = False
-CORS(app)
+application = Flask(__name__)
+application.config["DEBUG"] = False
+CORS(application)
 
 PORT = int(os.environ.get("PORT", 10000))
 
@@ -24,7 +24,7 @@ model = build_model(transformer_layer, max_len=MAX_LEN)
 model.load_weights("./Checkpoints/detox_final_weights.h5")
 
 
-@app.route("/api", methods=["GET"])
+@application.route("/api", methods=["GET"])
 def endpoint():
     query = dict()
     params = request.args.to_dict()  # parse user params
@@ -42,4 +42,4 @@ def endpoint():
 
     return jsonify(response)
 
-app.run(host="0.0.0.0", port=PORT)
+application.run(host="0.0.0.0", port=PORT)
