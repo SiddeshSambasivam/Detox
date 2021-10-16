@@ -7,21 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <title>Detox: Multilingual profanity filtering</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" />
 </head>
 <body class="bg-white">    
     <div class="container w-full max-w-5xl mx-auto">
-        <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-          <div class="flex flex-row items-center justify-between lg:justify-start">
+        <div class="flex max-w-screen-xl p-5 mx-auto items-center justify-between flex-row px-6 lg:px-8">
+          <div class="flex flex-row items-center justify-between justify-start">
             <a href="#" class="text-2xl font-bold tracking-tighter text-purple-800 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> Detox </a>
-            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+            <!-- <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
               <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
                 <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                 <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
               </svg>
-            </button>
+            </button> -->
           </div>
-          <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
-            <ul class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex">
+          <nav class="flex-row justify-end ">
+            <ul class="space-y-0 list-none lg:space-y-0 lg:items-center inline-flex">
               <li>
                 <a href="#solution" class="
               px-2
@@ -76,7 +77,7 @@
 
 
       <section class="w-full bg-white">
-        <div class="relative items-center w-full px-5 mx-auto  md:px-12 lg:px-16 max-w-7xl lg:pt-24 lg:pb-20">
+        <div class="relative items-center w-full px-5 mx-auto  pt-16 md:px-12 lg:px-16 max-w-7xl lg:pt-24 lg:pb-20">
           <div class="flex w-full mx-auto text-left">
             <div class="relative inline-flex items-center mx-auto align-middle">
               <div class="text-center">
@@ -84,8 +85,8 @@
                 <p class="max-w-xl mx-auto mt-7 text-md leading-relaxed text-left text-gray-600  lg:text-center">
                   Easy to integrate web service to filter toxic speech in your community forums and channels.
                 </p>
-                <div class="mt-6 mb-10 max-w-7xl sm:flex lg:justify-center">
-                    <button type="button" class="w-full sm:w-auto flex-none bg-gray-50 text-gray-400 hover:text-gray-900 font-mono leading-6 py-3 sm:px-6 border border-gray-200 rounded-xl flex items-center justify-center space-x-2 sm:space-x-4 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-300 duration-200 focus:outline-none transition-colors duration-200"
+                <div class="mt-6 mb-10 flex lg:justify-center overflow-clip overflow-scroll md:overflow-auto">
+                    <button type="button" class="overflow-clip flex-none bg-gray-50 text-gray-400 hover:text-gray-900 font-mono leading-6 py-3 sm:px-6 border border-gray-200 rounded-xl flex items-center justify-center space-x-2 sm:space-x-4 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-300 duration-200 focus:outline-none transition-colors duration-200"
                     onclick="copyToClipboard()"
                     >
                         <span class="text-gray-900">
@@ -204,13 +205,13 @@
                 <img class="h-full mb-10 object-cover object-center rounded-lg" alt="hero" src="https://blog.intercomassets.com/blog/wp-content/uploads/2019/11/hero-multilingual-support-trends-scaled.jpg.optimal.jpg">
               </div>
             </div>
-            <div class="flex flex-col items-start mb-16 text-left  lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 md:mb-0">
+            <div class="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 md:mb-0">
               <span class="mb-8 text-sm font-bold tracking-widest text-purple-700 uppercase">AI-based Solution</span>
               <h1 class="mb-8 text-2xl font-bold leading-none tracking-tighter text-black  md:text-5xl">
                 Multilingual toxcity classification
               </h1>
               <p class="mb-8 text-base leading-relaxed text-left text-gray-900">
-                We trained a multilingual toxicity classification model to filter out toxic messages or conversations. We built our product to scale so we trained and deployed the model in AWS with a load balancer to manage a high volume of traffic. 
+                We trained a multilingual toxicity classification model to filter out toxic messages or conversations.<br/><br/>We built our product to scale so we trained and deployed the model in AWS with a load balancer to manage a high volume of traffic. 
               </p>
               <div class="flex flex-wrap w-full mt-2 -mx-4 text-left">
                 <div class="w-1/4 p-4 mt-4 sm:w-1/4">
