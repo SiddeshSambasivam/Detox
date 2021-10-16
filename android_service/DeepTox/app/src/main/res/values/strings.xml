@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DeepTox</string>
+    <string name="accessibility_service_label">DeepTox Service</string>
+    <string name="accessibility_service_description">my description</string>
+    <string name="title_activity_overlay">OverlayActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
