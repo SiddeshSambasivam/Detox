@@ -274,3 +274,5 @@ cython_debug/
 Notebooks
 Checkpoints
 .vscode
+
+.token
