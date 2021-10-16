@@ -272,3 +272,5 @@ cython_debug/
 
 # Development scripts/notebooks
 Notebooks
+Checkpoints
+.vscode

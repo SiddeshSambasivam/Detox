@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Detox: Multilingual profanity filtering</title>
+</head>
+<body class="bg-white">    
+    <div class="container w-full max-w-7xl mx-auto">
+        <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          <div class="flex flex-row items-center justify-between lg:justify-start">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-purple-700 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> Detox </a>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
+                <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
+              </svg>
+            </button>
+          </div>
+          <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
+            <ul class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex">
+              <li>
+                <a href="#" class="
+              px-2
+              lg:px-6
+              py-6
+              text-sm
+              leading-[22px]
+              md:px-3
+              text-gray-800
+              hover:text-black
+              hover:font-bold
+              transition 500
+            ">About</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="
+              px-2
+              lg:px-6
+              py-6
+              text-sm
+              leading-[22px]
+              md:px-3
+              text-gray-800
+              hover:text-black
+              hover:font-bold
+            ">Team</a>
+              </li>
+            <li>              
+                <a class="px-2
+                lg:px-6
+                py-6
+                text-sm
+                leading-[22px]
+                md:px-3
+                text-gray-800
+                hover:text-black
+                hover:font-bold">Docs</a>
+            </li>
+            <li class="px-2 lg:px-6 md:px-3">            
+                <a href="https://github.com/SiddeshSambasivam/Detox" class="text-gray-400 hover:text-gray-500 transition-colors duration-200">
+                    <span class="sr-only">Detox on GitHub</span>
+                    <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </a>
+            </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <section class="w-full bg-white">
+        <div class="relative items-center w-full px-5 mx-auto  md:px-12 lg:px-16 max-w-7xl lg:py-24">
+          <div class="flex w-full mx-auto text-left">
+            <div class="relative inline-flex items-center mx-auto align-middle">
+              <div class="text-center">
+                <h1 data-animate="title" class="max-w-5xl text-5xl font-bold leading-none tracking-tighter text-black  lg:text-6xl lg:max-w-7xl">Multingual profanity filtering</h1>
+                <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-left text-gray-400  lg:text-center">
+                    Seamlessly integrate profanity filtering to all your platforms, community forums and channels.
+                </p>
+                <div class="mt-6 max-w-7xl sm:flex lg:justify-center">
+                    <button type="button" class="w-full sm:w-auto flex-none bg-gray-50 text-gray-400 hover:text-gray-900 font-mono leading-6 py-3 sm:px-6 border border-gray-200 rounded-xl flex items-center justify-center space-x-2 sm:space-x-4 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-300 focus:outline-none transition-colors duration-200"
+                    onclick="copyToClipboard()"
+                    >
+                        <span class="text-gray-900">
+                            <span class="hidden sm:inline text-gray-500" aria-hidden="true">$ </span>
+                            <span type="text" id="API" value="https://127.0.0.1:5500/api">https://127.0.0.1:5500/api</span>
+                            </span>
+                            <span class="sr-only">(click to copy to clipboard)</span>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 16c0 1.886 0 2.828.586 3.414C9.172 20 10.114 20 12 20h4c1.886 0 2.828 0 3.414-.586C20 18.828 20 17.886 20 16v-4c0-1.886 0-2.828-.586-3.414C18.828 8 17.886 8 16 8m-8 8h4c1.886 0 2.828 0 3.414-.586C16 14.828 16 13.886 16 12V8m-8 8c-1.886 0-2.828 0-3.414-.586C4 14.828 4 13.886 4 12V8c0-1.886 0-2.828.586-3.414C5.172 4 6.114 4 8 4h4c1.886 0 2.828 0 3.414.586C16 5.172 16 6.114 16 8"></path>
+                        </svg>
+                    </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+          function copyToClipboard() {
+            /* Get the text field */
+            var copyText = document.getElementById("API");
+            console.log('Text:', document.getElementById('API').innerHTML)
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(document.getElementById('API').innerHTML);
+        }
+      </script>
+</body>
+</html>
